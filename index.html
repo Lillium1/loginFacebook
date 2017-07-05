@@ -6,14 +6,22 @@
 
 </head>
 <body>
-	<h4>Ejercicio Guiado</h4>
 	<h2>Login con SDK de Facebook</h2>
 	<!--El atributo onlogin del botón para configurar una devolución de llamada de JavaScript, que comprueba el estado de inicio de sesión y determina si la persona completó el proceso correctamente--> 
 	<fb:login-button 
-		scope="public_profile,email"
-		onlogin="checkLoginState();">
+	scope="public_profile,email"
+	onlogin="checkLoginState();">
 	</fb:login-button>
-	
+	<div id="fb-root"></div>
+	<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.9&appId=1953035924938010";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
 <script src="js/main.js"></script>
 </body>
 </html>
