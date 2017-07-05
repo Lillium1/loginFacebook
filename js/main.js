@@ -24,17 +24,6 @@ FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
 });
 
-/*
-{
-    status: 'connected',
-    authResponse: {
-        accessToken: '...',
-        expiresIn:'...',
-        signedRequest:'...',
-        userID:'...'
-    }
-}
-*/
 //	Esta es la devolución de llamada. Llama a FB.getLoginStatus() para obtener el estado de inicio
 // de sesión más reciente. (statusChangeCallback() es una función que forma parte del ejemplo 
 // que procesa la respuesta).
