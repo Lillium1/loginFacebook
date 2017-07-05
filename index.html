@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login con SDK de Facebook</title>
+</head>
+<body>
+	<h4>Ejercicio Guiado</h4>
+	<h2>Login con SDK de Facebook</h2>
+	<!--El atributo onlogin del botón para configurar una devolución de llamada de JavaScript, que comprueba el estado de inicio de sesión y determina si la persona completó el proceso correctamente--> 
+	<fb:login-button 
+		scope="public_profile,email"
+		onlogin="checkLoginState();">
+	</fb:login-button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
